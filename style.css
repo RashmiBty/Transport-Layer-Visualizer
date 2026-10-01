@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+body > p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* Main Dashboard */
+
+.dashboard {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 20px;
+}
+
+
+/* Panels */
+
+.left-panel,
+.right-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel h2,
+.right-panel h2 {
+    margin-top: 0;
+}
+
+
+/* Activity Cards */
+
+.activity {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    padding: 18px;
+    margin-bottom: 18px;
+
+    background: #f8f8f8;
+}
+
+.activity h3 {
+    margin-top: 0;
+}
+
+
+/* Inputs */
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 10px;
+    margin: 6px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 18px;
+
+    margin: 5px 3px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #333;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+/* Activity Log */
+
+.activity-log {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #fafafa;
+}
+
+#activityLog {
+    min-height: 50px;
+}
+
+
+/* View Buttons */
+
+.view-buttons {
+    margin: 15px 0;
+
+    text-align: center;
+}
+
+.view-buttons button {
+    padding: 12px 20px;
+}
+
+
+/* Protocol View */
+
+#protocolView {
+    min-height: 280px;
+
+    padding: 20px;
+
+    border: 2px solid #ddd;
+    border-radius: 12px;
+
+    background: #f8f8f8;
+}
+
+
+/* Transport Controls */
+
+.transport-controls {
+    margin-top: 20px;
+
+    text-align: center;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #f1f1f1;
+}
+
+
+/* Packet Details */
+
+.packet-details {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #f8f8f8;
+
+    border: 1px solid #ddd;
+}
+
+.packet-details h3 {
+    margin-top: 0;
+}
+
+.packet-details p {
+    margin: 10px 0;
+}
+
+.packet-details span {
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+}
